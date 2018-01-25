@@ -61,3 +61,9 @@ class RecipeDetails extends React.Component {
 }
 
 export default RecipeDetails;
+
+//TODO: use map to loop over array of recipe objects
+
+//TODO: edit array object on edit button
+
+//TODO: Delete object from array on delete

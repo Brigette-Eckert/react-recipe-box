@@ -34,4 +34,5 @@ class RecipeBox extends React.Component {
 
 export default RecipeBox;
 
-//Make array of recipes- loop over here and pass down
+// TODO: Push new item to array when add is clicked
+//TODO: Add modal with proper forms that pops up when add is clicked
