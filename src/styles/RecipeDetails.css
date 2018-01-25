@@ -1,7 +1,20 @@
+.recipe-card-details {
+    font-family: 'Cookie', cursive;
+}
+.recipe-title {
+    font-size: 25px;
+}
 .sub-heading {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .action-buttons {
     padding: 15px;
+    font-family: sans-serif;
+}
+
+.ingredients ul, .directions ol {
+    text-align: left;
+    font-size: 20px;
 }

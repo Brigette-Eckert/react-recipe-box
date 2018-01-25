@@ -25,7 +25,7 @@ class RecipeBox extends React.Component {
   render(){
     return (
       <div className='recipe-box-container'>
-        <RecipeCard/>
+        <RecipeCard recipes={RECIPES}/>
         <Button bsStyle="success"> Add Recipe </Button>
       </div>
     )
