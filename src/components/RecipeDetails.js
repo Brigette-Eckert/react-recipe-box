@@ -14,7 +14,6 @@ class RecipeDetails extends React.Component {
           </Panel.Heading>
           <Panel.Collapse>
             <Panel.Body>
-              //show/hide body on click
               <ListGroupItem>
                 <div className="ingredients">
                   <h5 className="sub-heading">Ingredients</h5>

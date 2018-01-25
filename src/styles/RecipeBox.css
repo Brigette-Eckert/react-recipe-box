@@ -1,3 +1,6 @@
 .recipe-box-container {
-    background: mediumspringgreen;
+    background: #e7fee7;
+    width: 90%;
+    padding: 50px 0;
+    margin: 50px auto;
 }

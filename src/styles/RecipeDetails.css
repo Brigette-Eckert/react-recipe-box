@@ -1,3 +1,7 @@
 .sub-heading {
     font-weight: bold;
 }
+
+.action-buttons {
+    padding: 15px;
+}
