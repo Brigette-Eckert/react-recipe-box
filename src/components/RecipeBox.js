@@ -25,7 +25,9 @@ class RecipeBox extends React.Component {
   render(){
     return (
       <div className='recipe-box-container'>
-        <RecipeCard recipes={RECIPES[0]}/>
+        {RECIPES.map(function(recipe){
+          return <RecipeCard recipes={recipe}/>
+        })}
         <Button bsStyle="success"> Add Recipe </Button>
       </div>
     )
@@ -33,6 +35,11 @@ class RecipeBox extends React.Component {
 }
 
 export default RecipeBox;
+
+//
+// {directions.map(function(step){
+//   return <li>{step}</li>
+// })}
 
 // TODO: Push new item to array when add is clicked
 //TODO: Add modal with proper forms that pops up when add is clicked
