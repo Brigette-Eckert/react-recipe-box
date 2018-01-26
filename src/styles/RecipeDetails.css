@@ -6,7 +6,7 @@
 }
 .sub-heading {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .action-buttons {
@@ -16,5 +16,5 @@
 
 .ingredients ul, .directions ol {
     text-align: left;
-    font-size: 20px;
+    font-size: 23px;
 }
