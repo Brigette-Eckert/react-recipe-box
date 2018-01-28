@@ -19,7 +19,7 @@ class RecipeDetails extends React.Component {
                 <div className="ingredients">
                   <h5 className="sub-heading">Ingredients</h5>
                     <ul>
-                      {ingredients.map(function(ingredient) {
+                      {ingredients.map(function(ingredient, i) {
                         return <li>{ingredient}</li>;
 
                       })}
@@ -30,7 +30,7 @@ class RecipeDetails extends React.Component {
                 <div className="directions">
                   <h5 className="sub-heading">Directions</h5>
                   <ol>
-                    {directions.map(function(step){
+                    {directions.map(function(step, i){
                       return <li>{step}</li>
                     })}
                   </ol>
@@ -52,7 +52,6 @@ class RecipeDetails extends React.Component {
 
 export default RecipeDetails;
 
-//TODO: use map to loop over array of recipe objects
 
 //TODO: edit array object on edit button
 

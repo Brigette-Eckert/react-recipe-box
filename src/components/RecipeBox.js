@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Modal, FormGroup } from 'react-bootstrap';
 import '../styles/RecipeBox.css';
 import RecipeCard from "./RecipeCard";
 
@@ -22,13 +22,40 @@ let RECIPES = [{
 ];
 
 class RecipeBox extends React.Component {
+  constructor(props){
+    super(props);
+    this.state= {showModal: true};
+    this.closeRecipeModal = this.closeRecipeModal.bind(this);
+    this.showRecipeModal = this.showRecipeModal.bind(this);
+
+  }
+
+  showRecipeModal() {
+    this.setState({ showModal: true});
+  }
+  closeRecipeModal() {
+    this.setState({showModal: false});
+  }
+
   render(){
     return (
       <div className='recipe-box-container'>
-        {RECIPES.map(function(recipe){
+        {RECIPES.map(function(recipe, i){
           return <RecipeCard recipes={recipe}/>
         })}
-        <Button bsStyle="success"> Add Recipe </Button>
+        <Button onClick={this.showRecipeModal} bsStyle="success"> Add Recipe </Button>
+        {/*<Modal show={this.state.showModal}>*/}
+          {/*<Modal.Header>*/}
+            {/*<Modal.title > New Recipe </Modal.title>*/}
+          {/*</Modal.Header>*/}
+          {/*<Modal.Body>*/}
+            {/*<p> Form goes here </p>*/}
+          {/*</Modal.Body>*/}
+          {/*<Modal.Footer>*/}
+            {/*<Button bsStyle="success">Confirm</Button>*/}
+            {/*<Button bsStyle="danger">Cancel</Button>*/}
+          {/*</Modal.Footer>*/}
+        {/*</Modal>*/}
       </div>
     )
   }
@@ -36,10 +63,10 @@ class RecipeBox extends React.Component {
 
 export default RecipeBox;
 
-//
-// {directions.map(function(step){
-//   return <li>{step}</li>
-// })}
+//TODO: Figure out modal bug
+
 
 // TODO: Push new item to array when add is clicked
 //TODO: Add modal with proper forms that pops up when add is clicked
+
+//TODO: Use same basic form model for edit and add new recipe card?
